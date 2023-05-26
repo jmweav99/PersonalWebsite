@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Resume</title>
+  <style>
+    body {
+      font-family: "Times New Roman",Times,serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+    
+    .container {
+      margin: 0;
+      padding: 0;
+      background-image: url(sidebar.png);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    .container .content {
+      width: 80%;
+      max-width: 800px;
+      padding: 20px;
+      background-color: lightgrey;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    
+    h1, h2, h3 {
+      margin: 0;
+      text-align: center;
+    }
+    
+    .profile {
+      text-align: center;
+    }
+    
+    .profile img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    
+    .section {
+      margin-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    .section p {
+      margin: 0;
+    }
+    .section-content {
+      padding: 20px;
+      background-color: gray;
+      border-radius: 5px;
+      margin-left: 60px; /* Adjust this value to create space for the left image */
+      margin-right: 60px; /* Adjust this value to create space for the right image */
+      text-align: center;
+    }
+    .aboutme{
+      text-align: center;
+    }
+
+    /* Navigation Bar Styling */
+    /* Navigation Bar Styling */
+    .navbar {
+      background-color: #333;
+      padding: 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      z-index: 999;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar li {
+      margin: 0 10px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .navbar a::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -12px;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .navbar a:hover::before {
+      opacity: 1;
+    }
+
+    .navbar a.active::before {
+      opacity: 1;
+    }
+
+    .navbar a span {
+      margin-left: 5px;
+    }
+
+    @media screen and (max-width: 480px) {
+      .navbar {
+        justify-content: flex-start;
+      }
+    }
+   
+    .school{
+      color: gold;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Things I'm good at">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="profile">
+        <img src="me.jpg" alt="Your Picture">
+        <h1>Joseph Weaver</h1>
+        <p>Student at the University of Central Florida</p>
+      </div>
+      
+      <div id="about" class="section">
+        <h2>About Me</h2>
+        <div class="section-content">
+          Hi! I'm Joseph Weaver and thank you for visiting my website. I'm currently a student at the University of Central Florida. I have a strong passion for computer hardware and one day would like to pursue a Masters in Hardware Security. Take a look around the site to see what I'm working on and what I've worked on!
+        </div>
+      </div>
+      
+      <div id="education" class="section">
+        <h2>Education</h2>
+        <div class="section-content">
+          <p>Bachelor's Degree at the <span class = "school">University of Central Florida</span></p>
+          <p> Graduating in the Summer of 2023</p>
+        </div>
+      </div>
+      
+      <div id="Projects" class="section">
+        <h2>Projects</h2>
+        <div class="section-content">
+          <h3>Art</h3>
+          <p>I've been experimenting with diffferent art mediums. The main one I've been learning is Blender. Blender is a free 3d/sculpting software. Here's a transformer I modeled for my Senior Design Project. Just download the .glb and view it in any 3d viewing software!</p><a href="https://github.com/jmweav99/3dModel">https://github.com/jmweav99/3dModel</a>
+          <h4>Graphic design</h4>
+          <p>Lately I've been using alot of Javascript for various projects and I've needed to design some graphics. I used THREE.js to handle this and this is one of my resulting animations.</p>
+          <p>
+            Click <a href="animation.hmtl">Here</a> to play it.
+          </p>
+          <h3>Robotics</h3>
+          <p4>It's very hard to document any robotics projects on the website short of uploading demo videos of them. So I'm going to use this space as a log of all past and current robotics projects...         </p4>
+          <h4>TI-RSLK Robot:</h4>
+            <p>
+               A maze traversing robot, this project was built as part of a kit made by Texas Instruments. It used a MSP430 with several bump switches. When it hit a wall it would back up and try a different angle and go again.
+            </p>
+            <h4>Autonomous Underwater submarine:</h4>
+            <p>
+              This was part of a project and ultimately ended up failing, however, I learned alot about material science and structural integrity. 
+            </p>
+            <h4>Range Finder</h4>
+            <p>
+              This used an ultrasonic sensor, a back-lit lcd screen, and a odometer to control power to the screen. This was all processed on a Arudino. The way it worked was quite simple, the ultrasonic sensor sends out pings and the delay between sent and received determines the distance between it and any object its pointed at.
+            </p>
+            <h4>Object Tracking Bot</h4>
+            <p>
+              This robot was by far one of my most advanced as it relied on several peripherals to decide where to go. I used a mix between IR and Ultrasonic sensor as my robots eyes. I have a video of this bot handy so take a look!
+            </p>
+            <video width="320" height="240" controls>
+            <source src="robotcar.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <h4> Power Shutoff via water detection</h4>
+          <p>
+            This is my Senior Design project. It's a device that sits inside a pad-mounted ground transformer and when water rises to its sensors height, sends a wireless signal to a receiver on the switch that shuts it off. For this project I'm in charge of the microcontrollers and wireless communicaton. I've opted to use LoRaWan for communication and therefore selected the Arduino MKR 1310 as choice microcontroller.
+          </p>
+                    
+
+          <h3>Coding</h3>
+          <p>Most of my codes can be found on my <a href = "https://github.com/jmweav99">GitHub Page</a> but I do want to showcase on website that I worked on in a group. It's an algorithm Visualizer built with React/JavaScript and I think its pretty cool. <a href = "https://kevishie.github.io/algorithm-visualizer-system/"> HERES</a> the link</p>
+          <h4>
+            Game Development 
+          </h4>
+          <p>
+            Currently I am working on a Roblox game. Roblox is a free to play community orientated game where users can make and upload their own game using the Roblox Studio Engine. The engine runs on LUA and this is also how I've been learning LUA. 
+          </p>
+        </div>
+      </div>
+      
+      <div id="Things I'm good at" class="section">
+        <h2>Things I'm good at</h2>
+        <div class="section-content">
+          <h3>Coding Languages</h3>
+          <p>
+            Java, C, Python, HMTL/CSS, JavaScript, LUA.
+          </p>
+          <h3>Electrical Hardware</h3>
+          <p>
+            Circuit design/anaylsis, signal dicomposition and encoding.
+          </p>
+          <h3>Software</h3>
+          <p>
+            Blender,Microsoft Excel, Microsoft Word, AutoDesk Eagle, SolidWorks.
+          </p>
+        </div>
+      </div>
+      
+      <div id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="section-content">
+          <p>Email: jmw1999@yahoo.com</p>
+          <p>Linkedin: <a href="https://www.linkedin.com/in/josephmweaver21/">https://www.linkedin.com/in/josephmweaver21/</a></p>
+        </div>
+      </div>
+      <div id ="resume" class = "section">
+        <h1>Take a peak at my resume!</h1>
+        <object data = "Weaver_Resume.pdf" type="application/pdf" width="800" height="500"></object>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
