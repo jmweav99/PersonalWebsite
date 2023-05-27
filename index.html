@@ -4,13 +4,14 @@
   <title>My Resume</title>
   <style>
     body {
-      font-family: "Times New Roman",Times,serif;
+      font-family: "Times New Roman", Times, serif;
       margin: 0;
       padding: 0;
-      background-image: url(sidebar.png);
+      background-image: url(background.png);
       background-repeat: no-repeat;
-      background-size: contain; /* Updated property */
-      background-position: center; /* Added property */
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed; /* Added property */
     }
     
    .container {
@@ -216,9 +217,12 @@
           <h3>Art</h3>
           <p>I've been experimenting with different art mediums. The main one I've been learning is Blender. Blender is a free 3d/sculpting software. Here's a transformer I modeled for my Senior Design Project. Just download the .glb and view it in any 3d viewing software!</p><a href="https://github.com/jmweav99/3dModel">https://github.com/jmweav99/3dModel</a>
           <h4>Graphic design</h4>
-          <p>Lately I've been using alot of Javascript for various projects and I've needed to design some graphics. I used THREE.js to handle this and this is one of my resulting animations.</p>
+          <p>Lately I've also been learning Adobe After Effects and created this animation for one of my websites I was making.</p>
           <p>
-            Click <a href="#">Here</a> to play it.
+          <video width="320" height="240" controls>
+            <source src="tensflow.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
           </p>
           <h3>Robotics</h3>
           <p4>It's very hard to document any robotics projects on the website short of uploading demo videos of them. So I'm going to use this space as a log of all past and current robotics projects...         </p4>
