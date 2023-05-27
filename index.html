@@ -10,19 +10,20 @@
       background-color: #f0f0f0;
     }
     
-    .container {
+   .container {
       margin: 0;
       padding: 0;
       background-image: url(sidebar.png);
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain; /* Updated property */
+      background-position: center; /* Added property */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-
     }
+
     
     .container .content {
       width: 80%;
@@ -222,11 +223,11 @@
           </p>
           <h3>Robotics</h3>
           <p4>It's very hard to document any robotics projects on the website short of uploading demo videos of them. So I'm going to use this space as a log of all past and current robotics projects...         </p4>
-          <h4>TI-RSLK Robot:</h4>
+          <h4>TI-RSLK Robot</h4>
             <p>
                A maze traversing robot, this project was built as part of a kit made by Texas Instruments. It used a MSP430 with several bump switches. When it hit a wall it would back up and try a different angle and go again.
             </p>
-            <h4>Autonomous Underwater submarine:</h4>
+            <h4>Autonomous Underwater submarine</h4>
             <p>
               This was part of a project and ultimately ended up failing, however, I learned alot about material science and structural integrity. 
             </p>
